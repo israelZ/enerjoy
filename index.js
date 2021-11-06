@@ -1,10 +1,10 @@
-const PORT = process.env.PORT || 3001;
 const express = require("express");
 const app = express();
 const fs = require('fs')
 
 app.use(express.urlencoded());
 app.use(express.json());
+const PORT = process.env.PORT || 3001;
 
 
 app.get("/api", (req, res) => {

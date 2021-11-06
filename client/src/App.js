@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        Enerjoy Challenge
         {data.map((item, i) => {
           return <ClockTime id={item.id} city={item.city} time={item.time} onUpdate={onUpdate} key={i}></ClockTime>
         })}

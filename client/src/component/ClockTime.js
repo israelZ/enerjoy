@@ -22,8 +22,8 @@ function ClockTime(props) {
       <div className={'container'}>
         <div className={'clock'}>
           <div className={'clock-internal'}>
-            <div className={'hand-hour'} style={{ transform: `rotate(${hourProp * 30}deg` }} />
-            <div className={'hand-hour'} style={{ transform: `rotate(${minuteProp * 6}deg` }} />
+            <hr className={'hand-hour'} style={{ transform: `rotate(${hourProp * 30-90}deg` }} />
+            <hr className={'hand-mentis'} style={{ transform: `rotate(${minuteProp * 6-90}deg` }} />
             <div />
           </div>
         </div >

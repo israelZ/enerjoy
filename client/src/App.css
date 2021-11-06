@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: gray;
 }
 
 .App-logo {
@@ -7,21 +8,14 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .clock {
@@ -30,29 +24,32 @@
   align-items: center;
   width: 80px;
   height: 80px;
-  border: 2px solid red;
+  border: 1px solid black;
   border-radius: 50px;
   margin: 0px 10px;
 }
 .clock-internal {
-  display: flex;
-  justify-content: center;
   width: 70px;
   height: 70px;
-  border: 2px solid red;
+  border: 1px solid black;
   border-radius: 50px;
+  position: relative;
 }
 .hand-hour {
-  width: 1px;
-  height: 34px;
-  border: 1px solid red;
-  transform-origin: bottom;
+  border-top: 2px solid black;
+  transform-origin: left;
+  position: absolute;
+  width: 25px;
+  top: 35%;
+  left: 50%;
 }
 .hand-mentis {
-  width: 1px;
-  height: 34px;
-  border: 1px solid red;
-  transform-origin: bottom;
+  border-top: 2px solid black;
+  transform-origin: left;
+  position: absolute;
+  width: 30px;
+  top: 35%;
+  left: 50%;
 }
 .container {
   display: flex;
